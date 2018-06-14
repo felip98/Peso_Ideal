@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.usuario.peso_ideal.MainActivityPeso">
+
+
+    <EditText
+        android:id="@+id/etAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <TextView
+        android:id="@+id/rtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0,0"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="289dp"
+        android:layout_above="@+id/btVerificar"
+        android:layout_alignRight="@+id/btVerificar"
+        android:layout_alignEnd="@+id/btVerificar"
+        android:layout_marginRight="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="26dp" />
+
+    <RadioGroup
+        android:layout_width="228dp"
+        android:layout_height="129dp"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="42dp"
+        android:id="@+id/radioGroup"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_below="@+id/etAlt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp">
+
+        <RadioButton
+            android:id="@+id/rbF"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:text="Feminino" />
+
+        <RadioButton
+            android:id="@+id/rbM"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:text="Masculino" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btVerificar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="325dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginBottom="61dp" />
+
+</RelativeLayout>
